@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -10,11 +10,55 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/swiper.js"></script> -->
+
+<script type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+</script>
+
+<style>
+  .swiper {
+      width: 600px;
+      height: auto;
+    }
+</style>
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav class="flex justify-between items-center gap-4 bg-lightBlue p-4 md:p-8 rounded-b-3xl md:rounded-3xl md:mt-[30px] text-white">
+      <div class="mx-auto px-4 container">
+        <nav
+          class="flex justify-between gap-4 bg-gradient-primary p-4 md:p-8 rounded-b-3xl md:rounded-3xl md:mt-[30px] text-white items-center"
+        >
           <a href="/" class="logo">
             <img src="/assets/img/logo.svg" alt="logo" />
           </a>
@@ -36,40 +80,221 @@
         </nav>
       </div>
     </header>
-<main>
-  <section class="container">
-    <div class="my-[30px] text-center bg-lightBlue text-white p-4 md:p-[30px] rounded-3xl">
-      <h1 class="text-[25px] mt-10 md:mt-0 md:text-[40px] font-semibold">Разрабатываем эффективные <br> сайты для бизнеса </h1>
-      <p class="mt-[30px]">Наши решения всегда подкрепляются базой <br>исследований и опытом разработки</p>
-      <button class="p-4 bg-black text-white rounded-3xl my-12">Смотреть все проекты</button>
-    </div>
-    <div class="relative -top-16 text-center">
-      <button class="rounded-full px-7 w-20 h-20 border-2 border-gray-300 bg-white">
-        <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10.3194 0.0400387L10.3194 22.0484M10.3194 22.0484L19.2275 13.1403M10.3194 22.0484L1.41128 13.1403" stroke="black" stroke-width="1.60713"/>
-          </svg>
-      </button>
-    </div>
-  </section>
-  <section class="container my-[30px]">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="">
-          <img src="/assets/img/team 9.jpg" alt="team" class="w-full">
-          <div class="relative -top-8 flex justify-end">
-            <button class="rounded-full px-7 w-20 h-20 border-2 border-gray-300 bg-white">
-              <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M23.2407 10.0927H1.23238M1.23238 10.0927L10.1405 1.18457M1.23238 10.0927L10.1405 19.0008" stroke="black" stroke-width="1.60713"/>
-                </svg>                
-            </button>
-            <button class="rounded-full px-7 w-20 h-20 border-2 border-gray-300 bg-white">
-              <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008" stroke="black" stroke-width="1.60713"/>
-                </svg>                
-            </button>
+    <main>
+      <section class="container">
+        <div
+          class="my-[30px] text-center bg-gradient-sublime text-white p-4 md:p-[30px] rounded-3xl"
+        >
+          <h1 class="text-[25px] mt-10 md:mt-0 md:text-[40px] font-semibold">
+            Разрабатываем эффективные <br />
+            сайты для бизнеса
+          </h1>
+          <p class="mt-[30px]">
+            Наши решения всегда подкрепляются базой <br />исследований и опытом
+            разработки
+          </p>
+          <button class="p-4 bg-black text-white rounded-3xl my-12">
+            Смотреть все проекты
+          </button>
+        </div>
+        <div class="relative -top-16 text-center">
+          <button
+            class="rounded-full px-7 w-20 h-20 border-2 border-gray-300 bg-white"
+          >
+            <svg
+              width="20"
+              height="24"
+              viewBox="0 0 20 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.3194 0.0400387L10.3194 22.0484M10.3194 22.0484L19.2275 13.1403M10.3194 22.0484L1.41128 13.1403"
+                stroke="black"
+                stroke-width="1.60713"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="/assets/img/team 9.jpg" alt="team" class="w-full" />
+            <div class="relative -top-8 flex justify-end">
+              <button
+                class="swiper-button-prev rounded-full px-7 w-20 h-20 border-2 border-gray-300 bg-white"
+              >
+                <svg
+                  width="24"
+                  height="20"
+                  viewBox="0 0 24 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.2407 10.0927H1.23238M1.23238 10.0927L10.1405 1.18457M1.23238 10.0927L10.1405 19.0008"
+                    stroke="black"
+                    stroke-width="1.60713"
+                  />
+                </svg>
+              </button>
+              <button
+                class="swiper-button-next rounded-full px-7 w-20 h-20 border-2 border-gray-300 bg-white"
+              >
+                <svg
+                  width="24"
+                  height="20"
+                  viewBox="0 0 24 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
+                    stroke="black"
+                    stroke-width="1.60713"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
-        </div>  
-        <div class="">
-            <h2 class="text-[35px] mt-[62px] mb-7 font-semibold">Кратэк — сайт поставщика отопительного оборудования</h2>
+          <div class="swiper-slide">
+            <img src="/assets/img/team 9.jpg" alt="team" class="w-full" />
+            <div class="relative -top-8 flex justify-end">
+              <button
+                class="swiper-button-prev rounded-full px-7 w-20 h-20 border-2 border-gray-300 bg-white"
+              >
+                <svg
+                  width="24"
+                  height="20"
+                  viewBox="0 0 24 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.2407 10.0927H1.23238M1.23238 10.0927L10.1405 1.18457M1.23238 10.0927L10.1405 19.0008"
+                    stroke="black"
+                    stroke-width="1.60713"
+                  />
+                </svg>
+              </button>
+              <button
+                class="swiper-button-next rounded-full px-7 w-20 h-20 border-2 border-gray-300 bg-white"
+              >
+                <svg
+                  width="24"
+                  height="20"
+                  viewBox="0 0 24 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
+                    stroke="black"
+                    stroke-width="1.60713"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/img/team 9.jpg" alt="team" class="w-full" />
+            <div class="relative -top-8 flex justify-end">
+              <button
+                class="swiper-button-prev rounded-full px-7 w-20 h-20 border-2 border-gray-300 bg-white"
+              >
+                <svg
+                  width="24"
+                  height="20"
+                  viewBox="0 0 24 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.2407 10.0927H1.23238M1.23238 10.0927L10.1405 1.18457M1.23238 10.0927L10.1405 19.0008"
+                    stroke="black"
+                    stroke-width="1.60713"
+                  />
+                </svg>
+              </button>
+              <button
+                class="swiper-button-next rounded-full px-7 w-20 h-20 border-2 border-gray-300 bg-white"
+              >
+                <svg
+                  width="24"
+                  height="20"
+                  viewBox="0 0 24 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
+                    stroke="black"
+                    stroke-width="1.60713"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <section class="container my-[30px]">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="">
+            <img src="/assets/img/team 9.jpg" alt="team" class="w-full" />
+            <div class="relative -top-8 flex justify-end">
+              <button
+                class="rounded-full px-7 w-20 h-20 border-2 border-gray-300 bg-white"
+              >
+                <svg
+                  width="24"
+                  height="20"
+                  viewBox="0 0 24 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.2407 10.0927H1.23238M1.23238 10.0927L10.1405 1.18457M1.23238 10.0927L10.1405 19.0008"
+                    stroke="black"
+                    stroke-width="1.60713"
+                  />
+                </svg>
+              </button>
+              <button
+                class="rounded-full px-7 w-20 h-20 border-2 border-gray-300 bg-white"
+              >
+                <svg
+                  width="24"
+                  height="20"
+                  viewBox="0 0 24 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
+                    stroke="black"
+                    stroke-width="1.60713"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="">
+            <h2 class="text-[35px] mt-[62px] mb-7 font-semibold">
+              Кратэк — сайт поставщика отопительного оборудования
+            </h2>
             <h3 class="text-[18px] font-semibold">Задача:</h3>
             <p class="text-[18px]">
               Разработка сайта-презентации технически сложного продукта.
@@ -81,215 +306,408 @@
               Необходимо показать все важные детали и с
             </p>
             <div class="flex items-center gap-4">
-              <button class="p-4 bg-black text-white rounded-3xl my-12 flex items-center gap-4">
+              <button
+                class="p-4 bg-black text-white rounded-3xl my-12 flex items-center gap-4"
+              >
                 <div>Смотреть все проекты</div>
-                <svg width="18" height="14" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008" stroke="#fff" stroke-width="1.60713"/>
-                  </svg>
+                <svg
+                  width="18"
+                  height="14"
+                  viewBox="0 0 24 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
+                    stroke="#fff"
+                    stroke-width="1.60713"
+                  />
+                </svg>
               </button>
-              <button class="p-4 border border-gray-400 text-black rounded-3xl my-12 flex items-center gap-4">
+              <button
+                class="p-4 border border-gray-400 text-black rounded-3xl my-12 flex items-center gap-4"
+              >
                 <div>Смотреть все проекты</div>
-                <svg width="18" height="14" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008" stroke="black" stroke-width="1.60713"/>
-                  </svg>
+                <svg
+                  width="18"
+                  height="14"
+                  viewBox="0 0 24 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
+                    stroke="black"
+                    stroke-width="1.60713"
+                  />
+                </svg>
               </button>
-            </div> 
+            </div>
+          </div>
         </div>
-    </div>
-</section>
-  <section id="about" class="container my-[30px]">
-      <div class="flex-col flex md:flex-row justify-between">
-          <img src="/assets/img/team 9.jpg" alt="team" class="w-full md:w-2/5">
+      </section>
+      <section id="about" class="container my-[30px]">
+        <div class="flex-col flex md:flex-row justify-between">
+          <img
+            src="/assets/img/team 9.jpg"
+            alt="team"
+            class="w-full md:w-2/5"
+          />
           <div class="w-full md:w-3/5 px-4 md:px-[30px]">
-              <h2 class="text-center text-[35px] mt-[62px] mb-7 font-semibold">Информация о нашей компании</h2>
-              <p class="text-[18px]">Мы являемся ведущей веб-студией с опытными разработчиками, дизайнерами и маркетологами. Наша команда имеет богатый опыт в создании сайтов различных типов, от простых страниц-визиток до сложных корпоративных порталов. Мы стремимся предоставить вам непревзойденное качество и индивидуальный подход.</p>
+            <h2 class="text-center text-[35px] mt-[62px] mb-7 font-semibold">
+              Информация о нашей компании
+            </h2>
+            <p class="text-[18px]">
+              Мы являемся ведущей веб-студией с опытными разработчиками,
+              дизайнерами и маркетологами. Наша команда имеет богатый опыт в
+              создании сайтов различных типов, от простых страниц-визиток до
+              сложных корпоративных порталов. Мы стремимся предоставить вам
+              непревзойденное качество и индивидуальный подход.
+            </p>
             <p class="text-[18px] mt-4">
-              С 2001 года занимаемся разработкой сложных высоконагруженных веб-проектов, которые окупают затраты и...
+              С 2001 года занимаемся разработкой сложных высоконагруженных
+              веб-проектов, которые окупают затраты и...
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="container my-[64px]">
+        <div class="">
+          <h2 class="text-[25px] md:text-[35px] mb-7 font-semibold">
+            Как мы работаем
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div
+              class="relative p-[30px] bg-gradient-primary rounded-3xl text-white overflow-hidden"
+            >
+              <h3 class="text-2xl mb-3 font-semibold">
+                Аналитика и проектирование
+              </h3>
+              <p class="text-[18px] w-11/12">
+                Погружаемся в задачу, генерируем идеи по оптимизации и улучшению
+                проекта, систематизируем и структурируем информацию. Создаём
+                прототип проекта. Выбираем технологии и инструменты для
+                эффективного решения конкретных задач проекта.
               </p>
+              <p
+                class="text-[140px] font-semibold absolute -bottom-6 leading-none right-0"
+              >
+                1
+              </p>
+            </div>
+            <div
+              class="relative p-[30px] border border-black rounded-3xl text-black overflow-hidden"
+            >
+              <h3 class="text-2xl mb-3 font-semibold">Дизайн UX/UI</h3>
+              <p class="text-[18px] w-4/5">
+                Разрабатываем дизайн-систему для проекта. Все макеты
+                разрабатываются с учетом адаптации под мобильные устройства в 3х
+                вариантах: Desktop, Tablet, Mobile.
+              </p>
+              <p
+                class="text-[140px] font-semibold absolute top-10 leading-none right-4"
+              >
+                2
+              </p>
+            </div>
+            <div
+              class="relative p-[30px] border border-black rounded-3xl text-black overflow-hidden"
+            >
+              <h3 class="text-2xl mb-3 font-semibold">Адаптивная вёрстка</h3>
+              <p class="text-[18px] w-4/5">
+                Верстаем разработанные макеты. Тестируем на мобильных
+                устройствах.
+              </p>
+              <p
+                class="text-[140px] font-semibold absolute top-10 leading-none right-4"
+              >
+                3
+              </p>
+            </div>
+            <div
+              class="relative p-[30px] border border-black rounded-3xl text-black overflow-hidden"
+            >
+              <h3 class="text-2xl mb-3 font-semibold">Программирование</h3>
+              <p class="text-[18px] w-4/5">
+                Программируем свёрстанные разделы в соответствии с планом-
+                графиком. Подключаем платежные системы, модуль email- рассылки,
+                интегрируем sms-шлюз. Ваш сервис выдержит тысячи единовременных
+                обращений пользователей.
+              </p>
+              <p
+                class="text-[140px] font-semibold absolute -bottom-5 leading-none right-4"
+              >
+                4
+              </p>
+            </div>
           </div>
-      </div>
-  </section>
-  <section class="container my-[64px]">
-    <div class="">
-        <h2 class="text-[25px] md:text-[35px] mb-7 font-semibold">Как мы работаем</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="relative p-[30px] bg-lightBlue rounded-3xl text-white overflow-hidden">
-            <h3 class="text-2xl mb-3 font-semibold">Аналитика и проектирование</h3>
-            <p class="text-[18px] w-11/12">
-              Погружаемся в задачу, генерируем идеи по оптимизации и
-              улучшению проекта, систематизируем и структурируем
-              информацию. Создаём прототип проекта. Выбираем технологии и инструменты для эффективного решения конкретных задач
-              проекта.
-            </p>
-            <p class="text-[140px] font-semibold absolute -bottom-6 leading-none right-0">1</p>
         </div>
-        <div class="relative p-[30px] border border-black rounded-3xl text-black overflow-hidden">
-          <h3 class="text-2xl mb-3 font-semibold">Дизайн UX/UI</h3>
-          <p class="text-[18px] w-4/5">
-            Разрабатываем дизайн-систему для проекта. Все макеты
-            разрабатываются с учетом адаптации под мобильные
-            устройства в 3х вариантах: Desktop, Tablet, Mobile.
-          </p>
-          <p class="text-[140px] font-semibold absolute top-10  leading-none right-4">2</p>
-      </div>
-          <div class="relative p-[30px] border border-black rounded-3xl text-black overflow-hidden">
-            <h3 class="text-2xl mb-3 font-semibold">Адаптивная вёрстка</h3>
-            <p class="text-[18px] w-4/5">
-              Верстаем разработанные макеты. Тестируем на мобильных устройствах.
-            </p>
-            <p class="text-[140px] font-semibold absolute top-10  leading-none right-4">3</p>
-          </div>
-          <div class="relative p-[30px] border border-black rounded-3xl text-black overflow-hidden">
-            <h3 class="text-2xl mb-3 font-semibold">Программирование</h3>
-            <p class="text-[18px] w-4/5">
-              Программируем свёрстанные разделы в соответствии с планом-
-              графиком. Подключаем платежные системы, модуль email-
-              рассылки, интегрируем sms-шлюз. Ваш сервис выдержит
-              тысячи единовременных обращений пользователей.
-            </p>
-            <p class="text-[140px] font-semibold absolute -bottom-5  leading-none right-4">4</p>
-          </div>
-        </div>
-    </div>
-</section>
-<section class="container mb-32 md:mb-0">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-[30px] bg-lightBlue p-[30px] rounded-3xl">
-        <div class="text-white">
-          <h2 class="text-[35px] font-semibold">Есть проект для нас? </h2>
-          <div class="my-6">
+      </section>
+      <section class="container mb-32 md:mb-0">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-6 my-[30px] bg-gradient-sublime p-[30px] rounded-3xl"
+        >
+          <div class="text-white">
+            <h2 class="text-[35px] font-semibold">Есть проект для нас?</h2>
+            <div class="my-6">
               <p class="mb-12">
                 Оставьте заявку и мы обсудим вашу задачу, подготовим
-                индивидуальное коммерческое предложение и
-                разработаем ваш проект.
+                индивидуальное коммерческое предложение и разработаем ваш
+                проект.
               </p>
               <p>
-                Нажимая на кнопку, вы даете  согласие на обработку персональных данных.
+                Нажимая на кнопку, вы даете согласие на обработку персональных
+                данных.
               </p>
+            </div>
           </div>
-        </div>
-        <div>
+          <div>
             <form action="#" class="bg-white p-[32px] rounded-3xl">
-              <h3 class="font-semibold mb-8 text-3xl text-center">Бесплатная консультация</h3>
-             <div>
-              <label>Введите ваше имя</label>
-              <input type="text" class="w-full border-b border-lightBlue outline-none mb-6">
-             </div>
+              <h3 class="font-semibold mb-8 text-3xl text-center">
+                Бесплатная консультация
+              </h3>
+              <div>
+                <label>Введите ваше имя</label>
+                <input
+                  type="text"
+                  class="w-full border-b border-gradient-primary outline-none mb-6"
+                />
+              </div>
               <div>
                 <label>Введите номер телефона</label>
-                <input type="text" class="w-full border-b border-lightBlue outline-none">
+                <input
+                  type="text"
+                  class="w-full border-b border-gradient-primary outline-none"
+                />
               </div>
-              <button class="p-4 bg-black text-white rounded-3xl my-8 w-full">Оставить заявку</button>
+              <button class="p-4 bg-black text-white rounded-3xl my-8 w-full">
+                Оставить заявку
+              </button>
             </form>
+          </div>
         </div>
-  </div>
-</section>
-</main>
-  <footer class="hidden md:block">
-    <div class="container">
-      <nav class="flex justify-between items-center bg-lightBlue p-8 rounded-3xl mt-[30px] text-white">
-        <a href="#" class="logo">
-          <img src="/assets/img/logo.svg" alt="logo" />
-        </a>
-        <ul class="flex gap-5">
-          <li>
-            <a href="#"> Проекты </a>
-          </li>
-          <li>
-            <a href="#about"> О компании </a>
-          </li>
-          <li>
-            <a href="#"> Контакты </a>
-          </li>
-        </ul>
-        <div>
-          <a href="#">+79069121476</a>
-          <div>г.Красноярск ул.Комарова 5</div>
-        </div>
-      </nav>
-    </div>
-  </footer>
-   <!-- footer mobile -->
-  <footer class="fixed w-full bottom-0 md:hidden">
-    <div class="text-xs md:text-sm">
-      <nav class="w-full flex justify-evenly items-center bg-lightBlue p-4 pb-0 rounded-t-3xl mt-16 text-white">
-        <a href="#" class="mr-3">
-          <svg class="mx-auto" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_1_239)">
-            <path d="M6.61111 1.37207H1.5C0.947715 1.37207 0.5 1.81979 0.5 2.37207V7.48318C0.5 8.03546 0.947715 8.48318 1.5 8.48318H6.61111C7.16339 8.48318 7.61111 8.03546 7.61111 7.48318V2.37207C7.61111 1.81979 7.16339 1.37207 6.61111 1.37207Z" fill="#8D9BC2"/>
-            <path d="M6.61111 10.2607H1.5C0.947715 10.2607 0.5 10.7085 0.5 11.2607V16.3719C0.5 16.9241 0.947715 17.3719 1.5 17.3719H6.61111C7.16339 17.3719 7.61111 16.9241 7.61111 16.3719V11.2607C7.61111 10.7085 7.16339 10.2607 6.61111 10.2607Z" fill="#8D9BC2"/>
-            <path d="M15.5 1.37207H10.3889C9.83663 1.37207 9.38892 1.81979 9.38892 2.37207V7.48318C9.38892 8.03546 9.83663 8.48318 10.3889 8.48318H15.5C16.0523 8.48318 16.5 8.03546 16.5 7.48318V2.37207C16.5 1.81979 16.0523 1.37207 15.5 1.37207Z" fill="#8D9BC2"/>
-            <path d="M15.5 10.2607H10.3889C9.83663 10.2607 9.38892 10.7085 9.38892 11.2607V16.3719C9.38892 16.9241 9.83663 17.3719 10.3889 17.3719H15.5C16.0523 17.3719 16.5 16.9241 16.5 16.3719V11.2607C16.5 10.7085 16.0523 10.2607 15.5 10.2607Z" fill="#8D9BC2"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_1_239">
-            <rect width="17" height="17" fill="white" transform="translate(0 0.643555)"/>
-            </clipPath>
-            </defs>
+      </section>
+    </main>
+    <footer class="hidden md:block">
+      <div class="container">
+        <nav
+          class="flex justify-between items-center bg-gradient-primary p-8 rounded-3xl mt-[30px] text-white"
+        >
+          <a href="#" class="logo">
+            <img src="/assets/img/logo.svg" alt="logo" />
+          </a>
+          <ul class="flex gap-5">
+            <li>
+              <a href="#"> Проекты </a>
+            </li>
+            <li>
+              <a href="#about"> О компании </a>
+            </li>
+            <li>
+              <a href="#"> Контакты </a>
+            </li>
+          </ul>
+          <div>
+            <a href="#">+79069121476</a>
+            <div>г.Красноярск ул.Комарова 5</div>
+          </div>
+        </nav>
+      </div>
+    </footer>
+    <!-- footer mobile -->
+    <footer class="fixed w-full bottom-0 md:hidden">
+      <div class="text-xs md:text-sm">
+        <nav
+          class="w-full flex justify-evenly items-center bg-gradient-primary p-4 pb-0 rounded-t-3xl mt-16 text-white"
+        >
+          <a href="#" class="mr-3">
+            <svg
+              class="mx-auto"
+              width="17"
+              height="18"
+              viewBox="0 0 17 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_239)">
+                <path
+                  d="M6.61111 1.37207H1.5C0.947715 1.37207 0.5 1.81979 0.5 2.37207V7.48318C0.5 8.03546 0.947715 8.48318 1.5 8.48318H6.61111C7.16339 8.48318 7.61111 8.03546 7.61111 7.48318V2.37207C7.61111 1.81979 7.16339 1.37207 6.61111 1.37207Z"
+                  fill="#8D9BC2"
+                />
+                <path
+                  d="M6.61111 10.2607H1.5C0.947715 10.2607 0.5 10.7085 0.5 11.2607V16.3719C0.5 16.9241 0.947715 17.3719 1.5 17.3719H6.61111C7.16339 17.3719 7.61111 16.9241 7.61111 16.3719V11.2607C7.61111 10.7085 7.16339 10.2607 6.61111 10.2607Z"
+                  fill="#8D9BC2"
+                />
+                <path
+                  d="M15.5 1.37207H10.3889C9.83663 1.37207 9.38892 1.81979 9.38892 2.37207V7.48318C9.38892 8.03546 9.83663 8.48318 10.3889 8.48318H15.5C16.0523 8.48318 16.5 8.03546 16.5 7.48318V2.37207C16.5 1.81979 16.0523 1.37207 15.5 1.37207Z"
+                  fill="#8D9BC2"
+                />
+                <path
+                  d="M15.5 10.2607H10.3889C9.83663 10.2607 9.38892 10.7085 9.38892 11.2607V16.3719C9.38892 16.9241 9.83663 17.3719 10.3889 17.3719H15.5C16.0523 17.3719 16.5 16.9241 16.5 16.3719V11.2607C16.5 10.7085 16.0523 10.2607 15.5 10.2607Z"
+                  fill="#8D9BC2"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_239">
+                  <rect
+                    width="17"
+                    height="17"
+                    fill="white"
+                    transform="translate(0 0.643555)"
+                  />
+                </clipPath>
+              </defs>
             </svg>
-            <div>Проекты</div>            
-        </a>
-        <a href="#about" class="">
-          <svg class="mx-auto" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_1_239)">
-            <path d="M6.61111 1.37207H1.5C0.947715 1.37207 0.5 1.81979 0.5 2.37207V7.48318C0.5 8.03546 0.947715 8.48318 1.5 8.48318H6.61111C7.16339 8.48318 7.61111 8.03546 7.61111 7.48318V2.37207C7.61111 1.81979 7.16339 1.37207 6.61111 1.37207Z" fill="#8D9BC2"/>
-            <path d="M6.61111 10.2607H1.5C0.947715 10.2607 0.5 10.7085 0.5 11.2607V16.3719C0.5 16.9241 0.947715 17.3719 1.5 17.3719H6.61111C7.16339 17.3719 7.61111 16.9241 7.61111 16.3719V11.2607C7.61111 10.7085 7.16339 10.2607 6.61111 10.2607Z" fill="#8D9BC2"/>
-            <path d="M15.5 1.37207H10.3889C9.83663 1.37207 9.38892 1.81979 9.38892 2.37207V7.48318C9.38892 8.03546 9.83663 8.48318 10.3889 8.48318H15.5C16.0523 8.48318 16.5 8.03546 16.5 7.48318V2.37207C16.5 1.81979 16.0523 1.37207 15.5 1.37207Z" fill="#8D9BC2"/>
-            <path d="M15.5 10.2607H10.3889C9.83663 10.2607 9.38892 10.7085 9.38892 11.2607V16.3719C9.38892 16.9241 9.83663 17.3719 10.3889 17.3719H15.5C16.0523 17.3719 16.5 16.9241 16.5 16.3719V11.2607C16.5 10.7085 16.0523 10.2607 15.5 10.2607Z" fill="#8D9BC2"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_1_239">
-            <rect width="17" height="17" fill="white" transform="translate(0 0.643555)"/>
-            </clipPath>
-            </defs>
+            <div>Проекты</div>
+          </a>
+          <a href="#about" class="">
+            <svg
+              class="mx-auto"
+              width="17"
+              height="18"
+              viewBox="0 0 17 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_239)">
+                <path
+                  d="M6.61111 1.37207H1.5C0.947715 1.37207 0.5 1.81979 0.5 2.37207V7.48318C0.5 8.03546 0.947715 8.48318 1.5 8.48318H6.61111C7.16339 8.48318 7.61111 8.03546 7.61111 7.48318V2.37207C7.61111 1.81979 7.16339 1.37207 6.61111 1.37207Z"
+                  fill="#8D9BC2"
+                />
+                <path
+                  d="M6.61111 10.2607H1.5C0.947715 10.2607 0.5 10.7085 0.5 11.2607V16.3719C0.5 16.9241 0.947715 17.3719 1.5 17.3719H6.61111C7.16339 17.3719 7.61111 16.9241 7.61111 16.3719V11.2607C7.61111 10.7085 7.16339 10.2607 6.61111 10.2607Z"
+                  fill="#8D9BC2"
+                />
+                <path
+                  d="M15.5 1.37207H10.3889C9.83663 1.37207 9.38892 1.81979 9.38892 2.37207V7.48318C9.38892 8.03546 9.83663 8.48318 10.3889 8.48318H15.5C16.0523 8.48318 16.5 8.03546 16.5 7.48318V2.37207C16.5 1.81979 16.0523 1.37207 15.5 1.37207Z"
+                  fill="#8D9BC2"
+                />
+                <path
+                  d="M15.5 10.2607H10.3889C9.83663 10.2607 9.38892 10.7085 9.38892 11.2607V16.3719C9.38892 16.9241 9.83663 17.3719 10.3889 17.3719H15.5C16.0523 17.3719 16.5 16.9241 16.5 16.3719V11.2607C16.5 10.7085 16.0523 10.2607 15.5 10.2607Z"
+                  fill="#8D9BC2"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_239">
+                  <rect
+                    width="17"
+                    height="17"
+                    fill="white"
+                    transform="translate(0 0.643555)"
+                  />
+                </clipPath>
+              </defs>
             </svg>
-            <div>О нас</div>            
-        </a>
-  
-      <button class="rounded-full w-20 h-20 border-2 border-gray-300 bg-white relative -top-10">
-        <svg class="mx-auto" width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_1_258)">
-          <path d="M15.0001 6.58545L4.65744 15.1854C4.65744 15.1976 4.65441 15.2154 4.64837 15.2398C4.64244 15.2639 4.63928 15.2815 4.63928 15.2939V24.0023C4.63928 24.3167 4.75327 24.5892 4.98114 24.8187C5.20895 25.0483 5.47874 25.1638 5.79053 25.1638H12.6975V18.1968H17.3028V25.164H24.2098C24.5215 25.164 24.7917 25.0488 25.0192 24.8187C25.247 24.5894 25.3614 24.3167 25.3614 24.0023V15.2939C25.3614 15.2456 25.3548 15.2091 25.3432 15.1854L15.0001 6.58545Z" fill="#120CE8"/>
-          <path d="M29.2999 13.2261L25.3609 9.92412V2.52186C25.3609 2.35265 25.3069 2.21348 25.1987 2.10455C25.0914 1.99576 24.9534 1.94137 24.7852 1.94137H21.3317C21.1638 1.94137 21.0257 1.99576 20.9178 2.10455C20.81 2.21348 20.756 2.35269 20.756 2.52186V6.05964L16.3672 2.35841C15.9839 2.04393 15.5281 1.88672 15.0004 1.88672C14.4728 1.88672 14.0171 2.04393 13.6334 2.35841L0.699879 13.2261C0.579986 13.3227 0.514274 13.4527 0.502051 13.616C0.489892 13.7792 0.531789 13.9217 0.627867 14.0426L1.74308 15.3852C1.83916 15.494 1.96491 15.5605 2.12084 15.5849C2.2648 15.597 2.40876 15.5546 2.55273 15.4579L15 4.98922L27.4474 15.4578C27.5436 15.5422 27.6693 15.5843 27.8253 15.5843H27.8792C28.035 15.5605 28.1605 15.4935 28.257 15.3849L29.3724 14.0425C29.4683 13.9214 29.5103 13.7791 29.4979 13.6158C29.4855 13.4529 29.4196 13.3229 29.2999 13.2261Z" fill="#120CE8"/>
-          </g>
-          <defs>
-          <clipPath id="clip0_1_258">
-          <rect width="29" height="26" fill="white" transform="translate(0.5 0.525391)"/>
-          </clipPath>
-          </defs>
-          </svg>          
-      </button>
-    
-        <a href="#" class="">
-          <svg class="mx-auto" width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_1_251)">
-            <path d="M6.4196 0.525391C3.22444 0.525391 0.625 3.12483 0.625 6.31996C0.625 10.2852 5.8106 16.1064 6.03138 16.3523C6.23876 16.5833 6.60082 16.5829 6.80782 16.3523C7.0286 16.1064 12.2142 10.2852 12.2142 6.31996C12.2141 3.12483 9.61473 0.525391 6.4196 0.525391ZM6.4196 9.23537C4.81204 9.23537 3.50423 7.92752 3.50423 6.31996C3.50423 4.71239 4.81207 3.40458 6.4196 3.40458C8.02714 3.40458 9.33495 4.71243 9.33495 6.31999C9.33495 7.92756 8.02714 9.23537 6.4196 9.23537Z" fill="#8D9BC2"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_1_251">
-            <rect width="12" height="16" fill="white" transform="translate(0.419678 0.525391)"/>
-            </clipPath>
-            </defs>
-          </svg>            
-          <div>Контакты</div>            
-        </a>
-        <a href="#" class="ml-3">
-          <svg class="mx-auto" width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_1_253)">
-            <path d="M13.0801 8.98078L19.1562 13.3207V4.45752L13.0801 8.98078Z" fill="#8D9BC2"/>
-            <path d="M1.13293 4.45752V13.3207L7.20903 8.98078L1.13293 4.45752Z" fill="#8D9BC2"/>
-            <path d="M18.0298 1.87598H2.25941C1.69731 1.87598 1.25123 2.34943 1.16675 2.95906L10.1446 9.64213L19.1224 2.95906C19.038 2.34943 18.5919 1.87598 18.0298 1.87598Z" fill="#8D9BC2"/>
-            <path d="M12.0484 9.74932L10.4544 10.9355C10.3598 11.0055 10.2528 11.0399 10.1447 11.0399C10.0365 11.0399 9.9295 11.0055 9.83488 10.9355L8.24095 9.74805L1.16907 14.802C1.2558 15.4066 1.69963 15.8762 2.25947 15.8762H18.0298C18.5897 15.8762 19.0335 15.4066 19.1203 14.802L12.0484 9.74932Z" fill="#8D9BC2"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_1_253">
-            <rect width="20" height="15" fill="white" transform="translate(0.144531 0.983398)"/>
-            </clipPath>
-            </defs>
-            </svg>            
-            <div>Заявка</div>            
-        </a>
-      </nav>
-    </div>
-  </footer>
+            <div>О нас</div>
+          </a>
+
+          <button
+            class="rounded-full w-20 h-20 border-2 border-gray-300 bg-white relative -top-10"
+          >
+            <svg
+              class="mx-auto"
+              width="30"
+              height="27"
+              viewBox="0 0 30 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_258)">
+                <path
+                  d="M15.0001 6.58545L4.65744 15.1854C4.65744 15.1976 4.65441 15.2154 4.64837 15.2398C4.64244 15.2639 4.63928 15.2815 4.63928 15.2939V24.0023C4.63928 24.3167 4.75327 24.5892 4.98114 24.8187C5.20895 25.0483 5.47874 25.1638 5.79053 25.1638H12.6975V18.1968H17.3028V25.164H24.2098C24.5215 25.164 24.7917 25.0488 25.0192 24.8187C25.247 24.5894 25.3614 24.3167 25.3614 24.0023V15.2939C25.3614 15.2456 25.3548 15.2091 25.3432 15.1854L15.0001 6.58545Z"
+                  fill="#120CE8"
+                />
+                <path
+                  d="M29.2999 13.2261L25.3609 9.92412V2.52186C25.3609 2.35265 25.3069 2.21348 25.1987 2.10455C25.0914 1.99576 24.9534 1.94137 24.7852 1.94137H21.3317C21.1638 1.94137 21.0257 1.99576 20.9178 2.10455C20.81 2.21348 20.756 2.35269 20.756 2.52186V6.05964L16.3672 2.35841C15.9839 2.04393 15.5281 1.88672 15.0004 1.88672C14.4728 1.88672 14.0171 2.04393 13.6334 2.35841L0.699879 13.2261C0.579986 13.3227 0.514274 13.4527 0.502051 13.616C0.489892 13.7792 0.531789 13.9217 0.627867 14.0426L1.74308 15.3852C1.83916 15.494 1.96491 15.5605 2.12084 15.5849C2.2648 15.597 2.40876 15.5546 2.55273 15.4579L15 4.98922L27.4474 15.4578C27.5436 15.5422 27.6693 15.5843 27.8253 15.5843H27.8792C28.035 15.5605 28.1605 15.4935 28.257 15.3849L29.3724 14.0425C29.4683 13.9214 29.5103 13.7791 29.4979 13.6158C29.4855 13.4529 29.4196 13.3229 29.2999 13.2261Z"
+                  fill="#120CE8"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_258">
+                  <rect
+                    width="29"
+                    height="26"
+                    fill="white"
+                    transform="translate(0.5 0.525391)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+
+          <a href="#" class="">
+            <svg
+              class="mx-auto"
+              width="13"
+              height="17"
+              viewBox="0 0 13 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_251)">
+                <path
+                  d="M6.4196 0.525391C3.22444 0.525391 0.625 3.12483 0.625 6.31996C0.625 10.2852 5.8106 16.1064 6.03138 16.3523C6.23876 16.5833 6.60082 16.5829 6.80782 16.3523C7.0286 16.1064 12.2142 10.2852 12.2142 6.31996C12.2141 3.12483 9.61473 0.525391 6.4196 0.525391ZM6.4196 9.23537C4.81204 9.23537 3.50423 7.92752 3.50423 6.31996C3.50423 4.71239 4.81207 3.40458 6.4196 3.40458C8.02714 3.40458 9.33495 4.71243 9.33495 6.31999C9.33495 7.92756 8.02714 9.23537 6.4196 9.23537Z"
+                  fill="#8D9BC2"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_251">
+                  <rect
+                    width="12"
+                    height="16"
+                    fill="white"
+                    transform="translate(0.419678 0.525391)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <div>Контакты</div>
+          </a>
+          <a href="#" class="ml-3">
+            <svg
+              class="mx-auto"
+              width="21"
+              height="16"
+              viewBox="0 0 21 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1_253)">
+                <path
+                  d="M13.0801 8.98078L19.1562 13.3207V4.45752L13.0801 8.98078Z"
+                  fill="#8D9BC2"
+                />
+                <path
+                  d="M1.13293 4.45752V13.3207L7.20903 8.98078L1.13293 4.45752Z"
+                  fill="#8D9BC2"
+                />
+                <path
+                  d="M18.0298 1.87598H2.25941C1.69731 1.87598 1.25123 2.34943 1.16675 2.95906L10.1446 9.64213L19.1224 2.95906C19.038 2.34943 18.5919 1.87598 18.0298 1.87598Z"
+                  fill="#8D9BC2"
+                />
+                <path
+                  d="M12.0484 9.74932L10.4544 10.9355C10.3598 11.0055 10.2528 11.0399 10.1447 11.0399C10.0365 11.0399 9.9295 11.0055 9.83488 10.9355L8.24095 9.74805L1.16907 14.802C1.2558 15.4066 1.69963 15.8762 2.25947 15.8762H18.0298C18.5897 15.8762 19.0335 15.4066 19.1203 14.802L12.0484 9.74932Z"
+                  fill="#8D9BC2"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_253">
+                  <rect
+                    width="20"
+                    height="15"
+                    fill="white"
+                    transform="translate(0.144531 0.983398)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <div>Заявка</div>
+          </a>
+        </nav>
+      </div>
+    </footer>
   </body>
+  <script src="/swiper.js">
+   
+  </script>
 </html>
