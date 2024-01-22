@@ -2,20 +2,26 @@
 module.exports = {
   content: ["./*.html"],
   theme: {
-    // screens:{
-    //     'xl': { 'max': '1200px'},
-    //     'lg': { 'max': '1024px'},
-    //     "md": { 'max': '768px'},
-    //     'sm': { 'max': '375px'}
+    // screens: {
+    //   sm: '480px',
+    //   md: '768px',
+    //   lg: '976px',
+    //   xl: '1440px',
     // },
     container: {
       padding: '10px',
       center: true,
     },
     extend: {
+      backgroundImage: {
+        'gradient-primary':'linear-gradient(to right, rgb(217, 70, 239), rgb(220, 38, 38), rgb(251, 146, 60))',
+        'gradient-sublime':'linear-gradient(to right, rgb(251, 113, 133), rgb(217, 70, 239), rgb(99, 102, 241))'
+      },
       colors:{
         'darkBlue':'#001A34',
-        'lightBlue':'#120CE8'
+        'lightBlue':'#120CE8',
+        'gradient':'linear-gradient(to right, rgb(217, 70, 239), rgb(220, 38, 38), rgb(251, 146, 60))',
+        
       }
     },
   },
