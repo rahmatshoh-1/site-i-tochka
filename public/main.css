@@ -552,8 +552,8 @@ body{
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 @media (min-width: 640px) {
@@ -640,6 +640,10 @@ body{
 
 .z-50 {
   z-index: 50;
+}
+
+.order-last {
+  order: 9999;
 }
 
 .mx-auto {
@@ -952,6 +956,10 @@ body{
   line-height: 1rem;
 }
 
+.text-\[22px\] {
+  font-size: 22px;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -976,6 +984,10 @@ body{
 }
 
 @media (min-width: 768px) {
+  .md\:order-first {
+    order: -9999;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -986,6 +998,10 @@ body{
 
   .md\:mt-\[30px\] {
     margin-top: 30px;
+  }
+
+  .md\:mt-\[62px\] {
+    margin-top: 62px;
   }
 
   .md\:block {
@@ -1014,6 +1030,10 @@ body{
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:gap-4 {
+    gap: 1rem;
   }
 
   .md\:rounded-3xl {

@@ -9,7 +9,7 @@ module.exports = {
     //   xl: '1440px',
     // },
     container: {
-      padding: '10px',
+      padding: '0px',
       center: true,
     },
     extend: {
