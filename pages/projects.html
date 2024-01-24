@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
-  <body>
+  <body class="bg-body">
     <header>
       <div class="container">
         <nav
@@ -27,14 +27,15 @@
               <a href="#"> Контакты </a>
             </li>
           </ul>
-          <div class="text-right">
-            <a href="+7 (391) 989-77-77">+7 (391) 989-77-77</a>
-            <div class="text-[10px] md:text-sm">г.Красноярск ул.Комарова 5</div>
-          </div>
+          <button>
+            <a href="#" class="px-2 py-2 md:px-4 text-sm md:text-base md:py-3 bg-lightDark hover:bg-gradient-sublime md:border-b md:border font-bold md:border-white md:text-white rounded-3xl">
+              Оставить заявку
+            </a>
+          </button>
         </nav>
       </div>
     </header>
-    <main>
+    <main class="text-white mb-20">
        <div class="container">
            <div class="flex my-4 gap-4 p-4">
             <a class="text-gray-400" href="/index.html">Главная</a>
@@ -42,9 +43,9 @@
     
            </div>
 
-           <div class="grid grid-cols-3">
-            <h1 class="col-span-2 text-[25px] my-10 md:my-0 md:text-[40px] font-semibold">Проекты</h1>
-            <ul class="flex gap-4">
+           <div class="flex flex-col md:flex-row justify-between md:items-center">
+            <h1 class="text-[25px] my-10 md:my-0 md:text-[40px] font-semibold">Проекты</h1>
+            <ul class="flex mt-4 md:mt-0 gap-4">
                 <li>Визитка</li>
                 <li>Лендинг</li>
                 <li>Корпоративный</li>
@@ -53,52 +54,83 @@
        </div>
        <div class="container mt-16">
           <div>
-            <h2 class="text-[35px] mb-7 font-semibold w-full md:w-6/12">Кратэк — сайт поставщика отопительного оборудования</h2>
+            <h2 class="text-[25px] md:text-[35px] mb-7 font-semibold w-full md:w-6/12">Кратэк — сайт поставщика отопительного оборудования</h2>
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
                 <div>
                     <img src="/assets/img/1.png" alt="">
                 </div>
                 <div>
-                    <h3 class="text-[22px] font-semibold">Задача:</h3>
-                    <p class="text-[18px] mt-2 mb-20">
+                    <h3 class="text-[22px] font-semibold mt-8">Задача:</h3>
+                    <p class="text-[18px] mt-2 mb-10">
                       Разработка сайта-презентации технически сложного продукта. Необходимо показать все важные детали и сРазработка сайта-презентации технически сложного продукта. 
                     </p>
 
-                    <h3 class="text-[22px] mt-12 font-semibold">Задача:</h3>
-                    <p class="text-[18px] mt-2 mb-20">
+                    <h3 class="text-[22px] font-semibold mt-8">Решение:</h3>
+                    <p class="text-[18px] mt-3">
                       Разработка сайта-презентации технически сложного продукта. Необходимо показать все важные детали и сРазработка сайта-презентации технически сложного продукта. 
                     </p>
-                    <button class="p-4 bg-black text-white rounded-3xl my-12">
-                      Смотреть все проекты
+                    <button class="mt-10">
+                      <a href="#" class="px-4 py-3 flex items-center border-b md:border-t gap-4 bg-lightDark hover:bg-gradient-primary text-white rounded-3xl">
+                        Посмотреть проект
+                        <svg
+                        width="18"
+                        height="14"
+                        viewBox="0 0 24 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
+                          stroke="#fff"
+                          stroke-width="1.60713"
+                        />
+                      </svg>
+                      </a>
                     </button>
                 </div>
             </div>
           </div>
           <div class="mt-16">
-            <h2 class="text-[35px] mb-7 font-semibold w-full md:w-6/12">Кратэк — сайт поставщика отопительного оборудования</h2>
+            <h2 class="text-[25px] md:text-[35px] mb-7 font-semibold w-full md:w-6/12">Кратэк — сайт поставщика отопительного оборудования</h2>
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
                 <div>
                     <img src="/assets/img/2.png" alt="">
                 </div>
                 <div>
-                    <h3 class="text-[22px] font-semibold">Задача:</h3>
-                    <p class="text-[18px] mt-2 mb-20">
+                    <h3 class="text-[22px] font-semibold mt-8">Задача:</h3>
+                    <p class="text-[18px] mt-3">
                       Разработка сайта-презентации технически сложного продукта. Необходимо показать все важные детали и сРазработка сайта-презентации технически сложного продукта. 
                     </p>
 
-                    <h3 class="text-[22px] mt-12 font-semibold">Задача:</h3>
+                    <h3 class="text-[22px] font-semibold mt-8">Решение:</h3>
                     <p class="text-[18px] mt-2 mb-20">
                       Разработка сайта-презентации технически сложного продукта. Необходимо показать все важные детали и сРазработка сайта-презентации технически сложного продукта. 
                     </p>
-                    <button class="p-4 bg-black text-white rounded-3xl my-12">
-                      Смотреть все проекты
+                    <button class="mt-10">
+                      <a href="#" class="px-4 py-3 flex items-center border-b md:border-t gap-4 bg-lightDark hover:bg-gradient-primary text-white rounded-3xl">
+                        Посмотреть проект
+                        <svg
+                        width="18"
+                        height="14"
+                        viewBox="0 0 24 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
+                          stroke="#fff"
+                          stroke-width="1.60713"
+                        />
+                      </svg>
+                      </a>
+                     
                     </button>
                 </div>
             </div>
           </div>
        </div>
     </main>
-    <footer class="hidden md:block">
+    <footer class="hidden md:block md:mb-20">
       <div class="container">
         <nav
           class="flex justify-between items-center bg-gradient-primary p-8 rounded-3xl mt-[30px] text-white"
@@ -117,9 +149,9 @@
               <a href="#"> Контакты </a>
             </li>
           </ul>
-          <div>
-            <a href="#">+79069121476</a>
-            <div>г.Красноярск ул.Комарова 5</div>
+          <div class="text-right">
+            <a href="+7 (391) 989-77-77">+7 (391) 989-77-77</a>
+            <div class="text-[10px] md:text-sm">г.Красноярск ул.Комарова 5</div>
           </div>
         </nav>
       </div>
