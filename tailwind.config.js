@@ -9,7 +9,7 @@ module.exports = {
     //   xl: '1440px',
     // },
     container: {
-      padding: '10px',
+      padding: '0px',
       center: true,
     },
     extend: {
@@ -20,7 +20,8 @@ module.exports = {
       colors:{
         'darkBlue':'#001A34',
         'lightBlue':'#120CE8',
-        'gradient':'linear-gradient(to right, rgb(217, 70, 239), rgb(220, 38, 38), rgb(251, 146, 60))',
+        'body':'#001A34',
+        'lightDark':'#011D3F'
         
       }
     },
