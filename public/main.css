@@ -610,10 +610,6 @@ body{
   position: relative;
 }
 
-.-bottom-5 {
-  bottom: -1.25rem;
-}
-
 .-bottom-6 {
   bottom: -1.5rem;
 }
@@ -634,16 +630,16 @@ body{
   bottom: 0px;
 }
 
+.bottom-3 {
+  bottom: 0.75rem;
+}
+
 .right-0 {
   right: 0px;
 }
 
 .right-4 {
   right: 1rem;
-}
-
-.top-10 {
-  top: 2.5rem;
 }
 
 .z-50 {
@@ -1050,10 +1046,6 @@ body{
   font-size: 10px;
 }
 
-.text-\[140px\] {
-  font-size: 140px;
-}
-
 .text-\[18px\] {
   font-size: 18px;
 }
@@ -1068,6 +1060,10 @@ body{
 
 .text-\[35px\] {
   font-size: 35px;
+}
+
+.text-\[90px\] {
+  font-size: 90px;
 }
 
 .text-sm {
@@ -1130,11 +1126,11 @@ body{
   background-image: linear-gradient(to right, rgb(251, 113, 133), rgb(217, 70, 239), rgb(99, 102, 241));
 }
 
-.group:hover .group-hover\:top-20 {
-  top: 5rem;
-}
-
 @media (min-width: 768px) {
+  .md\:top-10 {
+    top: 2.5rem;
+  }
+
   .md\:order-first {
     order: -9999;
   }
@@ -1255,6 +1251,10 @@ body{
   .md\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .md\:text-\[140px\] {
+    font-size: 140px;
   }
 
   .md\:text-\[35px\] {
