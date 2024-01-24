@@ -4,21 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./public/main.css" rel="stylesheet" />
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    
+
+    <!-- Gallary -->
+    <link rel="stylesheet" href="/assets/css/lightbox.min.css">
+    <script src="/js/lightbox-plus-jquery.min.js"></script>
+    <!-- Swiper JS -->
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/swiper.js"></script> -->
+
+<!-- AOS animation -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="/swiper.js"></script> -->
+
 
 <script type="module">
   import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
@@ -70,7 +78,7 @@ const swiper = new Swiper('.swiper', {
           class="flex justify-between gap-4 bg-gradient-primary p-4 md:p-8 rounded-b-3xl md:rounded-3xl md:mt-[30px] text-white items-center"
         >
           <a href="/" class="logo">
-            <img src="/assets/img/logo.svg" alt="logo" />
+            <img src="/assets/images/logo.svg" alt="logo" />
           </a>
           <ul class="hidden md:flex gap-5">
             <li>
@@ -157,7 +165,7 @@ const swiper = new Swiper('.swiper', {
                   </p>
                   <div class="flex flex-col md:flex-row md:items-center gap-4 my-12">
                     <button class="">
-                      <a href="#" class="px-4 py-3 flex items-center border-b md:border-t gap-4 bg-lightDark hover:bg-gradient-primary text-white rounded-3xl">
+                      <a href="/pages/project1.html" class="px-4 py-3 flex items-center border-b md:border-t gap-4 bg-lightDark hover:bg-gradient-primary text-white rounded-3xl">
                         Посмотреть проект
                         <svg
                         width="18"
@@ -177,7 +185,7 @@ const swiper = new Swiper('.swiper', {
                     </button>
                      
                     <button class="">
-                      <a href="#" class="px-4 py-3 flex items-center border-b gap-4 bg-lightDark hover:bg-gradient-primary text-white rounded-3xl">
+                      <a href="/pages/projects.html" class="px-4 py-3 flex items-center border-b gap-4 bg-lightDark hover:bg-gradient-primary text-white rounded-3xl">
                         Смотреть все проекты
                         <svg
                         width="18"
@@ -198,7 +206,7 @@ const swiper = new Swiper('.swiper', {
                   </div>
                 </div>
                 <div class="">
-                  <img src="/assets/img/team 9.jpg" alt="team" class="w-full rounded-3xl" />
+                  <img src="/assets/images/team 9.jpg" alt="team" class="w-full rounded-3xl" />
                   <div class="relative -top-8 flex justify-end">
                     <button
                       class="swiper-button-prev rounded-full px-7 !w-20 !h-20 border-2 border-gray-300 bg-white"
@@ -250,7 +258,7 @@ const swiper = new Swiper('.swiper', {
       <section id="about" class="container my-[30px] text-white">
         <div class="flex-col flex md:flex-row justify-between">
           <img  data-aos="fade-up" data-aos-duration="2000" 
-            src="/assets/img/team 9.jpg"
+            src="/assets/images/team 9.jpg"
             alt="team"
             class="w-full rounded-3xl md:w-2/5"
           />
@@ -411,7 +419,7 @@ const swiper = new Swiper('.swiper', {
           class="flex justify-between items-center bg-gradient-primary p-8 rounded-3xl mt-[30px] text-white"
         >
           <a href="#" class="logo">
-            <img src="/assets/img/logo.svg" alt="logo" />
+            <img src="/assets/images/logo.svg" alt="logo" />
           </a>
           <ul class="flex gap-5">
             <li>
