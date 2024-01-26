@@ -11,65 +11,35 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
-
+    
     <!-- Gallary -->
-    <link rel="stylesheet" href="/assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="/assets/css/lightbox.min.css" />
     <script src="/js/lightbox-plus-jquery.min.js"></script>
     <!-- Swiper JS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="/swiper.js"></script> -->
-
-<!-- AOS animation -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
-
-<script type="module">
-  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
-
-
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
   
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
-</script>
 
-<style>
-  .swiper{
-    z-index: 0;
-  }
-    .swiper-button-next,
-    .swiper-button-prev{
-      position: unset;
-    }
-    .swiper-button-next::after, .swiper-button-prev::after{
-      content: none;
-    
-    }
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
+      <script type="module" src="/js/swiper.js"></script>
 
-</style>
+    <style>
+      .swiper {
+        z-index: 0;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        position: unset;
+      }
+      .swiper-button-next::after,
+      .swiper-button-prev::after {
+        content: none;
+      }
+    </style>
   </head>
   <body class="bg-body">
     <header>
@@ -78,7 +48,11 @@ const swiper = new Swiper('.swiper', {
           class="flex justify-between gap-4 bg-gradient-primary p-4 md:p-8 rounded-b-3xl md:rounded-3xl md:mt-[30px] text-white items-center"
         >
           <a href="/" class="logo">
-            <img src="/assets/images/logo.svg" alt="logo" />
+            <img
+              src="/assets/images/logo.svg"
+              class="h-5 md:h-auto"
+              alt="logo"
+            />
           </a>
           <ul class="hidden md:flex gap-5">
             <li>
@@ -88,11 +62,14 @@ const swiper = new Swiper('.swiper', {
               <a href="#about"> О компании </a>
             </li>
             <li>
-              <a href="#"> Контакты </a>
+              <a href="#stages">Этапы работы </a>
             </li>
           </ul>
           <button>
-            <a href="#" class="px-2 py-2 md:px-4 text-sm md:text-base md:py-3 bg-lightDark hover:bg-gradient-sublime md:border-b md:border font-bold md:border-white md:text-white rounded-3xl">
+            <a
+              href="#"
+              class="px-2 py-2 md:px-4 text-sm md:text-base md:py-3 bg-lightDark hover:bg-gradient-sublime md:border-b md:border font-bold md:border-white md:text-white rounded-3xl"
+            >
               Оставить заявку
             </a>
           </button>
@@ -104,23 +81,55 @@ const swiper = new Swiper('.swiper', {
         <div
           class="my-[30px] text-center bg-gradient-sublime text-white p-4 md:p-[30px] rounded-3xl"
         >
-          <h1 data-aos="fade-up"
-          data-aos-duration="1000" class="text-[25px] mt-10 md:mt-0 md:text-[40px] font-semibold">
-            Разрабатываем эффективные <br />
-            сайты для бизнеса
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="text-[25px] mt-10 md:mt-0 md:text-[40px] font-semibold"
+          >
+          Создаем результативные <br>онлайн-платформы для бизнеса
           </h1>
-          <p data-aos="fade-up" data-aos-duration="2000"  class="mt-[30px]">
-            Наши решения всегда подкрепляются базой <br />исследований и опытом
-            разработки
+          <p data-aos="fade-up" data-aos-duration="2000" class="mt-[30px]">
+            корпоративные веб-сайты, одностраничные ресурсы <br>и сайты-визитки с индивидуальным дизайном
           </p>
-          <button  data-aos="fade-up" data-aos-duration="3000" class="px-4 py-3 bg-lightDark text-white rounded-3xl my-12">
-            <a href="/pages/projects.html">
-              Смотреть все проекты
-            </a>
-           
+          <button
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            class="px-4 py-3 bg-lightDark text-white rounded-3xl my-12"
+          >
+            <a href="/pages/projects.html"> Смотреть все проекты </a>
           </button>
+          <div data-aos="fade-up" data-aos-duration="2000" class="flex justify-center md:justify-between mb-10">
+            <div class="flex gap-5">
+             <a href="">
+                <img src="/assets/images/figma.svg" alt="">
+             </a>
+           
+             <a href="">
+              <img src="/assets/images/btn-behance.svg" alt="">
+            </a>
+            <a href="">
+              <img src="/assets/images/btn-dribble.svg" alt="">
+            </a>
+            </div>
+            <div class="md:flex gap-5 hidden">
+              <a href="">
+                 <img src="/assets/images/html5.svg" alt="">
+              </a>
+            
+              <a href="">
+               <img src="/assets/images/tailwindcss.svg" alt="">
+             </a>
+             <a href="">
+               <img src="/assets/images/vue.svg" alt="">
+             </a>
+             </div>
+          </div>
         </div>
-        <div  data-aos="fade-up" data-aos-duration="3000"  class="relative -top-16 text-center">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          class="relative -top-16 text-center"
+        >
           <button
             class="rounded-full px-4 w-14 h-14 border-2 border-gray-300 bg-white"
           >
@@ -142,263 +151,314 @@ const swiper = new Swiper('.swiper', {
       </section>
       <section>
         <div class="container">
-           <!-- Slider main container -->
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper grid grid-cols-2 text-white">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4">
-                <div class="order-last  md:order-first">
-                  <h2 class="text-[22px] md:text-[35px] md:mt-[62px] mb-7 font-semibold">
-                    Кратэк — сайт поставщика отопительного оборудования
-                  </h2>
-                  <h3 class="text-[18px] font-semibold">Задача:</h3>
-                  <p  class="text-[18px]">
-                    Разработка сайта-презентации технически сложного продукта.
-                    Необходимо показать все важные детали и с
-                  </p>
-                  <h3 class="text-[18px] font-semibold mt-8">Решения:</h3>
-                  <p  class="text-[18px]">
-                    Разработка сайта-презентации технически сложного продукта.
-                    Необходимо показать все важные детали и с
-                  </p>
-                  <div class="flex flex-col md:flex-row md:items-center gap-4 my-12">
-                    <button class="">
-                      <a href="/pages/project1.html" class="px-4 py-3 flex items-center border-b md:border-t gap-4 bg-lightDark hover:bg-gradient-primary text-white rounded-3xl">
-                        Посмотреть проект
-                        <svg
-                        width="18"
-                        height="14"
-                        viewBox="0 0 24 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
-                          stroke="#fff"
-                          stroke-width="1.60713"
-                        />
-                      </svg>
-                      </a>
-                     
-                    </button>
-                     
-                    <button class="">
-                      <a href="/pages/projects.html" class="px-4 py-3 flex items-center border-b gap-4 bg-lightDark hover:bg-gradient-primary text-white rounded-3xl">
-                        Смотреть все проекты
-                        <svg
-                        width="18"
-                        height="14"
-                        viewBox="0 0 24 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
-                          stroke="#fff"
-                          stroke-width="1.60713"
-                        />
-                      </svg>
-                      </a>
-                     
-                    </button>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper grid grid-cols-2 text-white">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4">
+                  <div class="order-last md:order-first">
+                    <h2
+                      class="text-[22px] md:text-[35px] md:mt-[62px] mb-7 font-semibold"
+                    >
+                      Технологии путешествий
+                    </h2>
+                    <h3 class="text-[18px] font-semibold">Задача:</h3>
+                    <p class="text-[18px]">
+                      Разработка сайта-Интернет магазин для продажи товаров и услуги для автотуристов и автопутешественников.
+                      Необходимо показать все товары и услуги.
+                    </p>
+                    <h3 class="text-[18px] font-semibold mt-8">Решения:</h3>
+                    <p class="text-[18px]">
+                     Было разработана Интернет магазин для продажи товаров и услуги для автотуристов и автопутешественников.
+                    </p>
+                    <div
+                      class="flex flex-col md:flex-row md:items-center gap-4 my-12"
+                    >
+                      <button class="">
+                        <a
+                          href="/pages/project1.html"
+                          class="px-4 py-3 flex items-center border-b md:border-b-0 md:border-t gap-4 bg-lightDark hover:bg-gradient-primary text-white rounded-3xl"
+                        >
+                          Посмотреть проект
+                          <svg
+                            width="18"
+                            height="14"
+                            viewBox="0 0 24 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
+                              stroke="#fff"
+                              stroke-width="1.60713"
+                            />
+                          </svg>
+                        </a>
+                      </button>
+
+                      <button class="">
+                        <a
+                          href="/pages/projects.html"
+                          class="px-4 py-3 flex items-center border-b gap-4 bg-lightDark hover:bg-gradient-primary text-white rounded-3xl"
+                        >
+                          Смотреть все проекты
+                          <svg
+                            width="18"
+                            height="14"
+                            viewBox="0 0 24 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
+                              stroke="#fff"
+                              stroke-width="1.60713"
+                            />
+                          </svg>
+                        </a>
+                      </button>
+                    </div>
                   </div>
-                </div>
-                <div class="">
-                  <img src="/assets/images/team 9.jpg" alt="team" class="w-full rounded-3xl" />
-                  <div class="relative -top-8 flex justify-end">
-                    <button
-                      class="swiper-button-prev rounded-full px-7 !w-20 !h-20 border-2 border-gray-300 bg-white"
-                    >
-                      <svg
-                        width="24"
-                        height="20"
-                        viewBox="0 0 24 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                  <div class="">
+                    <img
+                      src="/assets/images/team 9.jpg"
+                      alt="team"
+                      class="w-full rounded-3xl"
+                    />
+                    <div class="relative -top-1 flex justify-end">
+                      <button
+                        class="swiper-button-prev rounded-full px-4 !w-14 !h-14 border-2 border-gray-300 bg-white"
                       >
-                        <path
-                          d="M23.2407 10.0927H1.23238M1.23238 10.0927L10.1405 1.18457M1.23238 10.0927L10.1405 19.0008"
-                          stroke="black"
-                          stroke-width="1.60713"
-                        />
-                      </svg>
-                    </button>
-                    <button
-                      class="swiper-button-next rounded-full px-7 !w-20 !h-20 border-2 border-gray-300 bg-white"
-                    >
-                      <svg
-                        width="24"
-                        height="20"
-                        viewBox="0 0 24 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                        <svg
+                          width="24"
+                          height="20"
+                          viewBox="0 0 24 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M23.2407 10.0927H1.23238M1.23238 10.0927L10.1405 1.18457M1.23238 10.0927L10.1405 19.0008"
+                            stroke="black"
+                            stroke-width="1.60713"
+                          />
+                        </svg>
+                      </button>
+                      <button
+                        class="swiper-button-next rounded-full px-4 !w-14 !h-14 border-2 border-gray-300 bg-white"
                       >
-                        <path
-                          d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
-                          stroke="black"
-                          stroke-width="1.60713"
-                        />
-                      </svg>
-                    </button>
+                        <svg
+                          width="24"
+                          height="20"
+                          viewBox="0 0 24 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
+                            stroke="black"
+                            stroke-width="1.60713"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4">
-                <div class="order-last  md:order-first">
-                  <h2 class="text-[22px] md:text-[35px] md:mt-[62px] mb-7 font-semibold">
-                    Кратэк — сайт поставщика отопительного оборудования
-                  </h2>
-                  <h3 class="text-[18px] font-semibold">Задача:</h3>
-                  <p  class="text-[18px]">
-                    Разработка сайта-презентации технически сложного продукта.
-                    Необходимо показать все важные детали и с
-                  </p>
-                  <h3 class="text-[18px] font-semibold mt-8">Решения:</h3>
-                  <p  class="text-[18px]">
-                    Разработка сайта-презентации технически сложного продукта.
-                    Необходимо показать все важные детали и с
-                  </p>
-                  <div class="flex flex-col md:flex-row md:items-center gap-4 my-12">
-                    <button class="">
-                      <a href="/pages/project1.html" class="px-4 py-3 flex items-center border-b md:border-t gap-4 bg-lightDark hover:bg-gradient-primary text-white rounded-3xl">
-                        Посмотреть проект
-                        <svg
-                        width="18"
-                        height="14"
-                        viewBox="0 0 24 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
-                          stroke="#fff"
-                          stroke-width="1.60713"
-                        />
-                      </svg>
-                      </a>
-                     
-                    </button>
-                     
-                    <button class="">
-                      <a href="/pages/projects.html" class="px-4 py-3 flex items-center border-b gap-4 bg-lightDark hover:bg-gradient-primary text-white rounded-3xl">
-                        Смотреть все проекты
-                        <svg
-                        width="18"
-                        height="14"
-                        viewBox="0 0 24 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
-                          stroke="#fff"
-                          stroke-width="1.60713"
-                        />
-                      </svg>
-                      </a>
-                     
-                    </button>
+              <div class="swiper-slide">
+                <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4">
+                  <div class="order-last md:order-first">
+                    <h2
+                      class="text-[22px] md:text-[35px] md:mt-[62px] mb-7 font-semibold"
+                    >
+                      Кратэк — сайт поставщика отопительного оборудования
+                    </h2>
+                    <h3 class="text-[18px] font-semibold">Задача:</h3>
+                    <p class="text-[18px]">
+                      Разработка сайта-презентации технически сложного продукта.
+                      Необходимо показать все важные детали и с
+                    </p>
+                    <h3 class="text-[18px] font-semibold mt-8">Решения:</h3>
+                    <p class="text-[18px]">
+                      Разработка сайта-презентации технически сложного продукта.
+                      Необходимо показать все важные детали и с
+                    </p>
+                    <div
+                      class="flex flex-col md:flex-row md:items-center gap-4 my-12"
+                    >
+                      <button class="">
+                        <a
+                          href="/pages/project1.html"
+                          class="px-4 py-3 flex items-center border-b md:border-b-0 md:border-t gap-4 bg-lightDark hover:bg-gradient-primary text-white rounded-3xl"
+                        >
+                          Посмотреть проект
+                          <svg
+                            width="18"
+                            height="14"
+                            viewBox="0 0 24 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
+                              stroke="#fff"
+                              stroke-width="1.60713"
+                            />
+                          </svg>
+                        </a>
+                      </button>
+
+                      <button class="">
+                        <a
+                          href="/pages/projects.html"
+                          class="px-4 py-3 flex items-center border-b gap-4 bg-lightDark hover:bg-gradient-primary text-white rounded-3xl"
+                        >
+                          Смотреть все проекты
+                          <svg
+                            width="18"
+                            height="14"
+                            viewBox="0 0 24 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
+                              stroke="#fff"
+                              stroke-width="1.60713"
+                            />
+                          </svg>
+                        </a>
+                      </button>
+                    </div>
                   </div>
-                </div>
-                <div class="">
-                  <img src="/assets/images/team 9.jpg" alt="team" class="w-full rounded-3xl" />
-                  <div class="relative -top-8 flex justify-end">
-                    <button
-                      class="swiper-button-prev rounded-full px-7 !w-20 !h-20 border-2 border-gray-300 bg-white"
-                    >
-                      <svg
-                        width="24"
-                        height="20"
-                        viewBox="0 0 24 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                  <div class="">
+                    <img
+                      src="/assets/images/team 9.jpg"
+                      alt="team"
+                      class="w-full rounded-3xl"
+                    />
+                    <div class="relative -top-1 flex justify-end">
+                      <button
+                        class="swiper-button-prev rounded-full px-4 !w-14 !h-14 border-2 border-gray-300 bg-white"
                       >
-                        <path
-                          d="M23.2407 10.0927H1.23238M1.23238 10.0927L10.1405 1.18457M1.23238 10.0927L10.1405 19.0008"
-                          stroke="black"
-                          stroke-width="1.60713"
-                        />
-                      </svg>
-                    </button>
-                    <button
-                      class="swiper-button-next rounded-full px-7 !w-20 !h-20 border-2 border-gray-300 bg-white"
-                    >
-                      <svg
-                        width="24"
-                        height="20"
-                        viewBox="0 0 24 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                        <svg
+                          width="24"
+                          height="20"
+                          viewBox="0 0 24 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M23.2407 10.0927H1.23238M1.23238 10.0927L10.1405 1.18457M1.23238 10.0927L10.1405 19.0008"
+                            stroke="black"
+                            stroke-width="1.60713"
+                          />
+                        </svg>
+                      </button>
+                      <button
+                        class="swiper-button-next rounded-full px-4 !w-14 !h-14 border-2 border-gray-300 bg-white"
                       >
-                        <path
-                          d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
-                          stroke="black"
-                          stroke-width="1.60713"
-                        />
-                      </svg>
-                    </button>
+                        <svg
+                          width="24"
+                          height="20"
+                          viewBox="0 0 24 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.844238 10.0927H22.8526M22.8526 10.0927L13.9445 1.18457M22.8526 10.0927L13.9445 19.0008"
+                            stroke="black"
+                            stroke-width="1.60713"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        </div>
       </section>
-     
+
       <section id="about" class="container my-[30px] text-white">
         <div class="flex-col flex md:flex-row justify-between">
-          <img  data-aos="fade-up" data-aos-duration="2000" 
+          <img
+            data-aos="fade-up"
+            data-aos-duration="2000"
             src="/assets/images/team 9.jpg"
             alt="team"
             class="w-full rounded-3xl md:w-2/5"
           />
-          <div class="w-full md:w-3/5 px-4 md:px-[30px]">
-            <h2  data-aos="fade-up" data-aos-duration="3000"  class="text-center text-[35px] mt-[62px] mb-7 font-semibold">
+          <div class="w-full md:w-3/5 md:px-[30px]">
+            <h2
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              class="text-center text-[35px] mt-[62px] mb-7 font-semibold"
+            >
               Информация о нашей компании
             </h2>
-            <p  data-aos="fade-up" data-aos-duration="3000" class="text-[18px]">
+            <p data-aos="fade-up" data-aos-duration="3000" class="text-[18px]">
               Мы являемся ведущей веб-студией с опытными разработчиками,
               дизайнерами и маркетологами. Наша команда имеет богатый опыт в
               создании сайтов различных типов, от простых страниц-визиток до
               сложных корпоративных порталов. Мы стремимся предоставить вам
               непревзойденное качество и индивидуальный подход.
             </p>
-            <p  data-aos="fade-up" data-aos-duration="3000" class="text-[18px] mt-4">
+            <p
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              class="text-[18px] mt-4"
+            >
               С 2001 года занимаемся разработкой сложных высоконагруженных
               веб-проектов, которые окупают затраты и...
             </p>
             <div class="grid grid-cols-1 md:grid-cols-2">
-              <div data-aos="fade-up" data-aos-duration="3000" class="text-[18px] mt-4">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                class="text-[18px] mt-4"
+              >
                 <div data-aos="fade-up" data-aos-duration="3000">
                   <div class="font-semibold text-[18px] mb-4">Адресс</div>
                   <a href="+73919897777">+7 (391) 989-77-77</a>
-                  <div class="text-[10px] md:text-sm">г.Красноярск ул.Комарова 5</div>
+                  <div class="text-[10px] md:text-sm">
+                    г.Красноярск ул.Комарова 5
+                  </div>
                 </div>
               </div>
-              <div data-aos="fade-up" data-aos-duration="3000" class="text-[18px] mt-4">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                class="text-[18px] mt-4"
+              >
                 <div data-aos="fade-up" data-aos-duration="3000">
                   <div class="font-semibold text-[18px] mb-4">Адресс</div>
                   <a href="+73919897777">+7 (391) 989-77-77</a>
-                  <div class="text-[10px] md:text-sm">г.Красноярск ул.Комарова 5</div>
+                  <div class="text-[10px] md:text-sm">
+                    г.Красноярск ул.Комарова 5
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="container my-[64px]">
+      <section class="container my-[64px]" id="stages">
         <div class="text-white">
-          <h2  data-aos="fade-up" data-aos-duration="3000"  class="text-[25px] md:text-[35px] mb-7 font-semibold">
-            Как мы работаем
+          <h2
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            class="text-[25px] md:text-[35px] mb-7 font-semibold"
+          >
+            Этапы работы
           </h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div  data-aos="fade-up" data-aos-duration="3000" 
-              class="relative p-[30px] bg-gradient-primary rounded-3xl text-white overflow-hidden"
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              class="relative p-4 md:p-[30px] bg-gradient-primary rounded-3xl text-white overflow-hidden"
             >
               <h3 class="text-2xl mb-3 font-semibold">
                 Аналитика и проектирование
@@ -415,8 +475,10 @@ const swiper = new Swiper('.swiper', {
                 1
               </p>
             </div>
-            <div  data-aos="fade-up" data-aos-duration="1500" 
-              class="relative p-[30px] bg-lightDark hover:bg-gradient-primary rounded-3xl overflow-hidden"
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="relative p-4 md:p-[30px] bg-lightDark hover:bg-gradient-primary rounded-3xl overflow-hidden"
             >
               <h3 class="text-2xl mb-3 font-semibold">Дизайн UX/UI</h3>
               <p class="text-[18px] w-4/5">
@@ -430,8 +492,10 @@ const swiper = new Swiper('.swiper', {
                 2
               </p>
             </div>
-            <div  data-aos="fade-up" data-aos-duration="3000" 
-              class="relative p-[30px] transition-all  md:bg-lightDark hover:bg-gradient-primary rounded-3xl  overflow-hidden"
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              class="relative p-4 md:p-[30px] transition-all  lg:!bg-lightDark hover:bg-gradient-primary rounded-3xl overflow-hidden"
             >
               <h3 class="text-2xl mb-3 font-semibold">Адаптивная вёрстка</h3>
               <p class="text-[18px] w-4/5">
@@ -444,8 +508,10 @@ const swiper = new Swiper('.swiper', {
                 3
               </p>
             </div>
-            <div  data-aos="fade-up" data-aos-duration="1500" 
-              class="relative p-[30px] bg-lightDark hover:bg-gradient-primary rounded-3xl  overflow-hidden"
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              class="relative p-4 md:p-[30px] bg-lightDark hover:bg-gradient-primary rounded-3xl overflow-hidden"
             >
               <h3 class="text-2xl mb-3 font-semibold">Программирование</h3>
               <p class="text-[18px] w-4/5">
@@ -464,8 +530,10 @@ const swiper = new Swiper('.swiper', {
         </div>
       </section>
       <section class="container mb-32 md:mb-0">
-        <div  data-aos="fade-up" data-aos-duration="3000" 
-          class="grid grid-cols-1 md:grid-cols-2 gap-6 my-[30px] bg-gradient-sublime p-[30px] rounded-3xl"
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          class="grid grid-cols-1 md:grid-cols-2 gap-6 my-[30px] bg-gradient-sublime p-4 md:p-[30px] rounded-3xl"
         >
           <div class="text-white">
             <h2 class="text-[35px] font-semibold">Есть проект для нас?</h2>
@@ -482,7 +550,7 @@ const swiper = new Swiper('.swiper', {
             </div>
           </div>
           <div>
-            <form action="#" class="bg-white p-[32px] rounded-3xl">
+            <form action="#" class="bg-white p-4 md:p-[30px] rounded-3xl">
               <h3 class="font-semibold mb-8 text-3xl text-center">
                 Бесплатная консультация
               </h3>
@@ -500,7 +568,9 @@ const swiper = new Swiper('.swiper', {
                   class="w-full border-b mt-4 border-bg-lightDark outline-none"
                 />
               </div>
-              <button class="p-4 font-semibold bg-lightDark hover:bg-gradient-primary text-white rounded-3xl mt-8 w-full">
+              <button
+                class="p-4 font-semibold bg-lightDark hover:bg-gradient-primary text-white rounded-3xl mt-8 w-full"
+              >
                 Оставить заявку
               </button>
             </form>
@@ -508,7 +578,11 @@ const swiper = new Swiper('.swiper', {
         </div>
       </section>
     </main>
-    <footer data-aos="fade-up" data-aos-duration="3000" class="hidden md:block md:mb-20">
+    <footer
+      data-aos="fade-up"
+      data-aos-duration="3000"
+      class="hidden md:block md:mb-20"
+    >
       <div class="container">
         <nav
           class="flex justify-between items-center bg-gradient-primary p-8 rounded-3xl mt-[30px] text-white"
@@ -524,7 +598,7 @@ const swiper = new Swiper('.swiper', {
               <a href="#about"> О компании </a>
             </li>
             <li>
-              <a href="#"> Контакты </a>
+              <a href="#stages">Этапы работы </a>
             </li>
           </ul>
           <div class="text-right">
@@ -621,41 +695,43 @@ const swiper = new Swiper('.swiper', {
             <div>О нас</div>
           </a>
 
-          <button
-            class="rounded-full w-20 h-20 border-2 border-gray-300 bg-white relative -top-10"
-          >
-            <svg
-              class="mx-auto"
-              width="30"
-              height="27"
-              viewBox="0 0 30 27"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+          <a href="/index.html" class="cursor-pointer">
+            <button
+              class="rounded-full w-14 h-14 border-2 border-gray-300 bg-white relative -top-10"
             >
-              <g clip-path="url(#clip0_1_258)">
-                <path
-                  d="M15.0001 6.58545L4.65744 15.1854C4.65744 15.1976 4.65441 15.2154 4.64837 15.2398C4.64244 15.2639 4.63928 15.2815 4.63928 15.2939V24.0023C4.63928 24.3167 4.75327 24.5892 4.98114 24.8187C5.20895 25.0483 5.47874 25.1638 5.79053 25.1638H12.6975V18.1968H17.3028V25.164H24.2098C24.5215 25.164 24.7917 25.0488 25.0192 24.8187C25.247 24.5894 25.3614 24.3167 25.3614 24.0023V15.2939C25.3614 15.2456 25.3548 15.2091 25.3432 15.1854L15.0001 6.58545Z"
-                  fill="#120CE8"
-                />
-                <path
-                  d="M29.2999 13.2261L25.3609 9.92412V2.52186C25.3609 2.35265 25.3069 2.21348 25.1987 2.10455C25.0914 1.99576 24.9534 1.94137 24.7852 1.94137H21.3317C21.1638 1.94137 21.0257 1.99576 20.9178 2.10455C20.81 2.21348 20.756 2.35269 20.756 2.52186V6.05964L16.3672 2.35841C15.9839 2.04393 15.5281 1.88672 15.0004 1.88672C14.4728 1.88672 14.0171 2.04393 13.6334 2.35841L0.699879 13.2261C0.579986 13.3227 0.514274 13.4527 0.502051 13.616C0.489892 13.7792 0.531789 13.9217 0.627867 14.0426L1.74308 15.3852C1.83916 15.494 1.96491 15.5605 2.12084 15.5849C2.2648 15.597 2.40876 15.5546 2.55273 15.4579L15 4.98922L27.4474 15.4578C27.5436 15.5422 27.6693 15.5843 27.8253 15.5843H27.8792C28.035 15.5605 28.1605 15.4935 28.257 15.3849L29.3724 14.0425C29.4683 13.9214 29.5103 13.7791 29.4979 13.6158C29.4855 13.4529 29.4196 13.3229 29.2999 13.2261Z"
-                  fill="#120CE8"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_1_258">
-                  <rect
-                    width="29"
-                    height="26"
-                    fill="white"
-                    transform="translate(0.5 0.525391)"
+              <svg
+                class="mx-auto"
+                width="30"
+                height="27"
+                viewBox="0 0 30 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_258)">
+                  <path
+                    d="M15.0001 6.58545L4.65744 15.1854C4.65744 15.1976 4.65441 15.2154 4.64837 15.2398C4.64244 15.2639 4.63928 15.2815 4.63928 15.2939V24.0023C4.63928 24.3167 4.75327 24.5892 4.98114 24.8187C5.20895 25.0483 5.47874 25.1638 5.79053 25.1638H12.6975V18.1968H17.3028V25.164H24.2098C24.5215 25.164 24.7917 25.0488 25.0192 24.8187C25.247 24.5894 25.3614 24.3167 25.3614 24.0023V15.2939C25.3614 15.2456 25.3548 15.2091 25.3432 15.1854L15.0001 6.58545Z"
+                    fill="#120CE8"
                   />
-                </clipPath>
-              </defs>
-            </svg>
-          </button>
+                  <path
+                    d="M29.2999 13.2261L25.3609 9.92412V2.52186C25.3609 2.35265 25.3069 2.21348 25.1987 2.10455C25.0914 1.99576 24.9534 1.94137 24.7852 1.94137H21.3317C21.1638 1.94137 21.0257 1.99576 20.9178 2.10455C20.81 2.21348 20.756 2.35269 20.756 2.52186V6.05964L16.3672 2.35841C15.9839 2.04393 15.5281 1.88672 15.0004 1.88672C14.4728 1.88672 14.0171 2.04393 13.6334 2.35841L0.699879 13.2261C0.579986 13.3227 0.514274 13.4527 0.502051 13.616C0.489892 13.7792 0.531789 13.9217 0.627867 14.0426L1.74308 15.3852C1.83916 15.494 1.96491 15.5605 2.12084 15.5849C2.2648 15.597 2.40876 15.5546 2.55273 15.4579L15 4.98922L27.4474 15.4578C27.5436 15.5422 27.6693 15.5843 27.8253 15.5843H27.8792C28.035 15.5605 28.1605 15.4935 28.257 15.3849L29.3724 14.0425C29.4683 13.9214 29.5103 13.7791 29.4979 13.6158C29.4855 13.4529 29.4196 13.3229 29.2999 13.2261Z"
+                    fill="#120CE8"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_258">
+                    <rect
+                      width="29"
+                      height="26"
+                      fill="white"
+                      transform="translate(0.5 0.525391)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </a>
 
-          <a href="#" class="">
+          <a href="#stages" class="">
             <svg
               class="mx-auto"
               width="13"
@@ -681,7 +757,7 @@ const swiper = new Swiper('.swiper', {
                 </clipPath>
               </defs>
             </svg>
-            <div>Контакты</div>
+            <div>Этапы</div>
           </a>
           <a href="#" class="ml-3">
             <svg
@@ -727,9 +803,7 @@ const swiper = new Swiper('.swiper', {
       </div>
     </footer>
   </body>
-  
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script> AOS.init(); </script>
 </html>

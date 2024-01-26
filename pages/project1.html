@@ -7,9 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-      <!-- Gallary -->
-      <link rel="stylesheet" href="/assets/css/lightbox.min.css">
-      <script src="/js/lightbox-plus-jquery.min.js"></script>
+    <!-- Gallary -->
+    <link rel="stylesheet" href="/assets/css/lightbox.min.css" />
+    <script src="/js/lightbox-plus-jquery.min.js"></script>
   </head>
   <body class="bg-body">
     <header>
@@ -18,21 +18,28 @@
           class="flex justify-between gap-4 bg-gradient-primary p-4 md:p-8 rounded-b-3xl md:rounded-3xl md:mt-[30px] text-white items-center"
         >
           <a href="/" class="logo">
-            <img src="/assets/images/logo.svg" alt="logo" />
+            <img
+              src="/assets/images/logo.svg"
+              class="h-5 md:h-auto"
+              alt="logo"
+            />
           </a>
           <ul class="hidden md:flex gap-5">
             <li>
               <a href="/pages/projects.html"> Проекты </a>
             </li>
             <li>
-              <a href="#about"> О компании </a>
+              <a href="../#about"> О компании </a>
             </li>
             <li>
-              <a href="#"> Контакты </a>
+              <a href="../#stages">Этапы работы </a>
             </li>
           </ul>
           <button>
-            <a href="#" class="px-2 py-2 md:px-4 text-sm md:text-base md:py-3 bg-lightDark hover:bg-gradient-sublime md:border-b md:border font-bold md:border-white md:text-white rounded-3xl">
+            <a
+              href="#"
+              class="px-2 py-2 md:px-4 text-sm md:text-base md:py-3 bg-lightDark hover:bg-gradient-sublime md:border-b md:border font-bold md:border-white md:text-white rounded-3xl"
+            >
               Оставить заявку
             </a>
           </button>
@@ -40,69 +47,96 @@
       </div>
     </header>
     <main class="text-white mb-20">
-        <div class="container">
-            <div class="flex my-4 gap-4 py-4">
-             <a class="text-gray-400" href="/index.html">Главная </a>-
-             <a href="/pages/projects.html">Проекты</a>
-     
-            </div>
- 
-            <div class="flex flex-col md:flex-row justify-between md:items-center">
-             <h1 class="text-[25px] my-10 md:my-0 md:text-[40px] font-semibold">Проекты</h1>
-             <ul class="flex mt-4 md:mt-0 gap-4">
-                 <li>Визитка</li>
-                 <li>Лендинг</li>
-                 <li>Корпоративный</li>
-             </ul>
-            </div>
+      <div class="container">
+        <div class="flex my-4 gap-4 py-4">
+          <a class="text-gray-400" href="/index.html">Главная </a>-
+          <a href="/pages/projects.html">Проекты</a>
         </div>
-        <div class="container my-16">
-            <div class="mt-16 overflow-hidden">
-              <h2 class="text-[25px] md:text-[35px] mb-7 font-semibold w-full">Кратэк — сайт поставщика отопительного оборудования</h2>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <a data-lightbox="mygallery" href="/assets/images/1.jpg">
-                  <img src="/assets/images/1.jpg" alt="">
-                </a>
-                  <div>
-                    <div>
-                        <h2 class="text-[22px] font-semibold">Задача:</h2>
-                        <p class="text-[18px] mt-3">
-                          Разработка сайта-презентации технически сложного продукта. Необходимо показать все важные детали и сРазработка сайта-презентации технически сложного продукта. 
-                        </p>
-    
-                        <h2 class="text-[22px] font-semibold mt-8">Решение:</h2>
-                        <p class="text-[18px] mt-2 mb-10">
-                          Разработка сайта-презентации технически сложного продукта. Необходимо показать все важные детали и сРазработка сайта-презентации технически сложного продукта. 
-                        </p>
-                        <h2 class="text-[22px] font-semibold mt-8">Технологии</h2>
-                        <p class="text-[18px] mt-2 mb-10">
-                            HTML5  Css CSS framework- TailwindcssVue3 + Laravel + InertiaJS  
-                        </p>
-                        
-                    </div>
 
-                </div>
+        <div class="flex flex-col md:flex-row justify-between md:items-center">
+          <h1 class="text-[25px] md:text-[40px] font-semibold">Проекты</h1>
+          <ul class="flex mt-4 md:mt-0 gap-4">
+            <li>Визитка</li>
+            <li>Лендинг</li>
+            <li>Корпоративный</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container my-16">
+        <div class="mt-16 overflow-hidden">
+          <h2 class="text-[25px] md:text-[35px] mb-7 font-semibold w-full">
+            Кратэк — сайт поставщика отопительного оборудования
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <a data-lightbox="mygallery" href="/assets/images/1.jpg">
+              <img src="/assets/images/1.jpg" alt="" />
+            </a>
+            <div>
+              <div>
+                <h2 class="text-[22px] font-semibold">Задача:</h2>
+                <p class="text-[18px] mt-3">
+                  Разработка сайта-презентации технически сложного продукта.
+                  Необходимо показать все важные детали и сРазработка
+                  сайта-презентации технически сложного продукта.
+                </p>
+
+                <h2 class="text-[22px] font-semibold mt-8">Решение:</h2>
+                <p class="text-[18px] mt-2 mb-10">
+                  Разработка сайта-презентации технически сложного продукта.
+                  Необходимо показать все важные детали и сРазработка
+                  сайта-презентации технически сложного продукта.
+                </p>
+                <h2 class="text-[22px] font-semibold mt-8">Технологии</h2>
+                <p class="text-[18px] mt-2 mb-10">
+                  HTML5 Css CSS framework- TailwindcssVue3 + Laravel + InertiaJS
+                </p>
               </div>
             </div>
-            <h2 class="text-[25px] md:text-[35px] mb-7 font-semibold w-full">Версия для ПК </h2>
-            <a data-lightbox="mygallery" href="/assets/images/1.jpg">
-              <img src="/assets/images/1.jpg" class="w-full h-96 object-cover rounded-3xl" alt="">
-            </a>
-            <h2 class="text-[25px] md:text-[35px] my-7 font-semibold w-full">Версия для Моб </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <a data-lightbox="mygallery" href="/assets/images/1.jpg">
-                  <img src="/assets/images/1.jpg" class="w-full h-96 object-cover rounded-3xl" alt="">
-                </a>
-                <a data-lightbox="mygallery" href="/assets/images/1.jpg">
-                  <img src="/assets/images/1.jpg" class="w-full h-96 object-cover rounded-3xl" alt="">
-                </a>
-                <a data-lightbox="mygallery" href="/assets/images/1.jpg">
-                  <img src="/assets/images/1.jpg" class="w-full h-96 object-cover rounded-3xl" alt="">
-                </a>
-            </div>
-         </div>
+          </div>
+        </div>
+        <h2 class="text-[25px] md:text-[35px] mb-7 font-semibold w-full">
+          Версия для ПК
+        </h2>
+        <a data-lightbox="mygallery" href="/assets/images/1.jpg">
+          <img
+            src="/assets/images/1.jpg"
+            class="w-full h-96 object-cover rounded-3xl"
+            alt=""
+          />
+        </a>
+        <h2 class="text-[25px] md:text-[35px] my-7 font-semibold w-full">
+          Версия для Моб
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <a data-lightbox="mygallery" href="/assets/images/1.jpg">
+            <img
+              src="/assets/images/1.jpg"
+              class="w-full h-96 object-cover rounded-3xl"
+              alt=""
+            />
+          </a>
+          <a data-lightbox="mygallery" href="/assets/images/1.jpg">
+            <img
+              src="/assets/images/1.jpg"
+              class="w-full h-96 object-cover rounded-3xl"
+              alt=""
+            />
+          </a>
+          <a data-lightbox="mygallery" href="/assets/images/1.jpg">
+            <img
+              src="/assets/images/1.jpg"
+              class="w-full h-96 object-cover rounded-3xl"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
     </main>
-    <footer class="hidden md:block md:mb-20">
+    <footer
+      data-aos="fade-up"
+      data-aos-duration="3000"
+      class="hidden md:block md:mb-20"
+    >
       <div class="container">
         <nav
           class="flex justify-between items-center bg-gradient-primary p-8 rounded-3xl mt-[30px] text-white"
@@ -112,17 +146,17 @@
           </a>
           <ul class="flex gap-5">
             <li>
-              <a href="#"> Проекты </a>
+              <a href="/pages/projects.html"> Проекты </a>
             </li>
             <li>
-              <a href="#about"> О компании </a>
+              <a href="../#about"> О компании </a>
             </li>
             <li>
-              <a href="#"> Контакты </a>
+              <a href="../#stages">Этапы работы </a>
             </li>
           </ul>
           <div class="text-right">
-            <a href="+7 (391) 989-77-77">+7 (391) 989-77-77</a>
+            <a href="+73919897777">+7 (391) 989-77-77</a>
             <div class="text-[10px] md:text-sm">г.Красноярск ул.Комарова 5</div>
           </div>
         </nav>
@@ -132,9 +166,9 @@
     <footer class="fixed w-full bottom-0 md:hidden">
       <div class="text-xs md:text-sm">
         <nav
-          class="w-full flex justify-evenly items-center bg-gradient-primary p-4 pb-0 rounded-t-3xl mt-16 text-white"
+          class="relative z-50 w-full flex justify-evenly items-center bg-gradient-primary p-4 pb-0 rounded-t-3xl mt-16 text-white"
         >
-          <a href="#" class="mr-3">
+          <a href="/pages/projects.html" class="mr-3">
             <svg
               class="mx-auto"
               width="17"
@@ -174,7 +208,7 @@
             </svg>
             <div>Проекты</div>
           </a>
-          <a href="#about" class="">
+          <a href="../#about" class="">
             <svg
               class="mx-auto"
               width="17"
@@ -215,41 +249,43 @@
             <div>О нас</div>
           </a>
 
-          <button
-            class="rounded-full w-20 h-20 border-2 border-gray-300 bg-white relative -top-10"
-          >
-            <svg
-              class="mx-auto"
-              width="30"
-              height="27"
-              viewBox="0 0 30 27"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+          <a href="/index.html" class="cursor-pointer">
+            <button
+              class="rounded-full w-14 h-14 border-2 border-gray-300 bg-white relative -top-10"
             >
-              <g clip-path="url(#clip0_1_258)">
-                <path
-                  d="M15.0001 6.58545L4.65744 15.1854C4.65744 15.1976 4.65441 15.2154 4.64837 15.2398C4.64244 15.2639 4.63928 15.2815 4.63928 15.2939V24.0023C4.63928 24.3167 4.75327 24.5892 4.98114 24.8187C5.20895 25.0483 5.47874 25.1638 5.79053 25.1638H12.6975V18.1968H17.3028V25.164H24.2098C24.5215 25.164 24.7917 25.0488 25.0192 24.8187C25.247 24.5894 25.3614 24.3167 25.3614 24.0023V15.2939C25.3614 15.2456 25.3548 15.2091 25.3432 15.1854L15.0001 6.58545Z"
-                  fill="#120CE8"
-                />
-                <path
-                  d="M29.2999 13.2261L25.3609 9.92412V2.52186C25.3609 2.35265 25.3069 2.21348 25.1987 2.10455C25.0914 1.99576 24.9534 1.94137 24.7852 1.94137H21.3317C21.1638 1.94137 21.0257 1.99576 20.9178 2.10455C20.81 2.21348 20.756 2.35269 20.756 2.52186V6.05964L16.3672 2.35841C15.9839 2.04393 15.5281 1.88672 15.0004 1.88672C14.4728 1.88672 14.0171 2.04393 13.6334 2.35841L0.699879 13.2261C0.579986 13.3227 0.514274 13.4527 0.502051 13.616C0.489892 13.7792 0.531789 13.9217 0.627867 14.0426L1.74308 15.3852C1.83916 15.494 1.96491 15.5605 2.12084 15.5849C2.2648 15.597 2.40876 15.5546 2.55273 15.4579L15 4.98922L27.4474 15.4578C27.5436 15.5422 27.6693 15.5843 27.8253 15.5843H27.8792C28.035 15.5605 28.1605 15.4935 28.257 15.3849L29.3724 14.0425C29.4683 13.9214 29.5103 13.7791 29.4979 13.6158C29.4855 13.4529 29.4196 13.3229 29.2999 13.2261Z"
-                  fill="#120CE8"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_1_258">
-                  <rect
-                    width="29"
-                    height="26"
-                    fill="white"
-                    transform="translate(0.5 0.525391)"
+              <svg
+                class="mx-auto"
+                width="30"
+                height="27"
+                viewBox="0 0 30 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_258)">
+                  <path
+                    d="M15.0001 6.58545L4.65744 15.1854C4.65744 15.1976 4.65441 15.2154 4.64837 15.2398C4.64244 15.2639 4.63928 15.2815 4.63928 15.2939V24.0023C4.63928 24.3167 4.75327 24.5892 4.98114 24.8187C5.20895 25.0483 5.47874 25.1638 5.79053 25.1638H12.6975V18.1968H17.3028V25.164H24.2098C24.5215 25.164 24.7917 25.0488 25.0192 24.8187C25.247 24.5894 25.3614 24.3167 25.3614 24.0023V15.2939C25.3614 15.2456 25.3548 15.2091 25.3432 15.1854L15.0001 6.58545Z"
+                    fill="#120CE8"
                   />
-                </clipPath>
-              </defs>
-            </svg>
-          </button>
+                  <path
+                    d="M29.2999 13.2261L25.3609 9.92412V2.52186C25.3609 2.35265 25.3069 2.21348 25.1987 2.10455C25.0914 1.99576 24.9534 1.94137 24.7852 1.94137H21.3317C21.1638 1.94137 21.0257 1.99576 20.9178 2.10455C20.81 2.21348 20.756 2.35269 20.756 2.52186V6.05964L16.3672 2.35841C15.9839 2.04393 15.5281 1.88672 15.0004 1.88672C14.4728 1.88672 14.0171 2.04393 13.6334 2.35841L0.699879 13.2261C0.579986 13.3227 0.514274 13.4527 0.502051 13.616C0.489892 13.7792 0.531789 13.9217 0.627867 14.0426L1.74308 15.3852C1.83916 15.494 1.96491 15.5605 2.12084 15.5849C2.2648 15.597 2.40876 15.5546 2.55273 15.4579L15 4.98922L27.4474 15.4578C27.5436 15.5422 27.6693 15.5843 27.8253 15.5843H27.8792C28.035 15.5605 28.1605 15.4935 28.257 15.3849L29.3724 14.0425C29.4683 13.9214 29.5103 13.7791 29.4979 13.6158C29.4855 13.4529 29.4196 13.3229 29.2999 13.2261Z"
+                    fill="#120CE8"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_258">
+                    <rect
+                      width="29"
+                      height="26"
+                      fill="white"
+                      transform="translate(0.5 0.525391)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </a>
 
-          <a href="#" class="">
+          <a href="../#stages" class="">
             <svg
               class="mx-auto"
               width="13"
@@ -275,7 +311,7 @@
                 </clipPath>
               </defs>
             </svg>
-            <div>Контакты</div>
+            <div>Этапы</div>
           </a>
           <a href="#" class="ml-3">
             <svg
