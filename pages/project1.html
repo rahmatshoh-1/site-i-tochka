@@ -1,8 +1,9 @@
 <!doctype html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Проект 1</title>
     <link href="../public/main.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,6 +11,25 @@
     <!-- Gallary -->
     <link rel="stylesheet" href="/assets/css/lightbox.min.css" />
     <script src="/js/lightbox-plus-jquery.min.js"></script>
+    <style>
+      button#amoforms_action_btn {
+box-shadow: unset !important;
+display: unset !important;
+font-family: unset !important;
+padding: unset !important;
+border-radius: unset !important;
+height: unset !important;
+border: unset !important;
+outline: unset !important;
+cursor: pointer !important;
+text-transform: unset !important;
+font-weight: 400 !important;
+margin: unset !important;
+font-size: unset !important;
+color: unset !important;
+background-color: unset !important;
+}
+ </style>
   </head>
   <body class="bg-body">
     <header>
@@ -35,13 +55,8 @@
               <a href="../#stages">Этапы работы </a>
             </li>
           </ul>
-          <button>
-            <a
-              href="#"
-              class="px-2 py-2 md:px-4 text-sm md:text-base md:py-3 bg-lightDark hover:bg-gradient-sublime md:border-b md:border font-bold md:border-white md:text-white rounded-3xl"
-            >
-              Оставить заявку
-            </a>
+          <button id="btn-amoCRMFORM" class="px-2 py-2 md:px-4 text-sm md:text-base md:py-3 bg-lightDark hover:bg-gradient-sublime md:border-b md:border font-bold md:border-white md:text-white rounded-3xl">
+            <script>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.params||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"1276638",hash:"bbb5630d581f24871bf9a430ca199496",locale:"ru"}),a[o+m]=a[o+m]||function(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");</script><script id="amoforms_script_1276638" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1706177282"></script>
           </button>
         </nav>
       </div>
@@ -55,7 +70,7 @@
 
         <div class="flex flex-col md:flex-row justify-between md:items-center">
           <h1 class="text-[25px] md:text-[40px] font-semibold">Проекты</h1>
-          <ul class="flex mt-4 md:mt-0 gap-4">
+          <ul class="hidden mt-4 md:mt-0 gap-4">
             <li>Визитка</li>
             <li>Лендинг</li>
             <li>Корпоративный</li>
@@ -141,7 +156,7 @@
         <nav
           class="flex justify-between items-center bg-gradient-primary p-8 rounded-3xl mt-[30px] text-white"
         >
-          <a href="#" class="logo">
+          <a href="/" class="logo">
             <img src="/assets/images/logo.svg" alt="logo" />
           </a>
           <ul class="flex gap-5">
